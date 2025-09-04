@@ -25,6 +25,7 @@ const licensePlate = generateLicensePlate();
 const payload = {
   "$.asset.asset_code": "MTRHONDA.VARIO.125FICBS",
   "$.asset.bpkb_ownership": "1",
+  "$.asset.bpkb_number" : "1234567890",
   "$.asset.bpkb_status": "on_hand",
   "$.asset.license_plate": licensePlate,
   "$.asset.manufacturing_year": "2021",
@@ -54,6 +55,7 @@ const payload = {
   "$.customer.personal.marital_status_code": "S",
   "$.customer.professional.education_code": "S1",
   "$.customer.professional.monthly_income": "10000000",
+  "$.customer.professional.occupation_code": "PNSBPKAGTU",
   "$.customer.professional.occupation_type_code": "M",
   "$.documents.ktp.document_id": "e8c507c0-94f7-4418-9d1a-8a4d5e180c2f",
   "$.documents.selfie.document_id": "e8c507c0-94f7-4418-9d1a-8a4d5e180c2f",
@@ -61,7 +63,7 @@ const payload = {
   "$.loan_structure.product_offering": 11,
   "$.loan_structure.original_amount": "12690000",
   "$.loan_structure.tenure": 12,
-  "$.customer.professional.occupation_code": "PNSBPKAGTU",
+  "$.customer.personal.number_dependents": 2,
 };
 
 (async () => {
